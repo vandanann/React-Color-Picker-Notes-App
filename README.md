@@ -1,2 +1,2 @@
-# React-Color-Picker-App
-React Hooks, Color Picker Library. Local Storage
+# React-Color-Picker-Notes-App
+React Hooks, Local Storage
