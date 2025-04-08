@@ -53,9 +53,6 @@
 
 }
 
-.textarea ::placeholder{
-    color: azure;
-}
 .textBox:focus{
     outline: none;
 }
@@ -64,24 +61,13 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
+ font-size: x-small;
 }
-.starIcon{
-    cursor: pointer;
-    width: 28px;
-    height: 28px;
-    border: 2px solid rgb(19, 5, 55);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.deleteIcon{
-    color: black;
-    cursor: pointer;
-}
+
+
 .footerDropDown{
     position: absolute;
-    background-color: white;
+    background-color: rgb(143, 105, 170);
     width: 5rem;
     padding: 10px 0;
     top: 2.5rem;
@@ -90,13 +76,5 @@
     justify-content: center;
     grid-gap: 5px;
     border-radius: 10px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-.pinIcon{
-    color: rgb(108, 108, 249);
-    cursor: pointer;
-}
-.delete{
-    color: rgb(255, 73, 73);
-    cursor: pointer;
+    font-size: small;
 }

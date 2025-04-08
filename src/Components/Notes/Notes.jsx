@@ -30,30 +30,27 @@ const Notes = ({ noteItems, handleAddText, handleFavorite, handleDelete, handleP
                                             placeholder="Write Something"
                                         />
                                         <div className="noteFooter">
-                                            <div className='deleteIcon'>
-                                                <BsThreeDotsVertical size={25} onClick={()=>setFooterDropDown(index)} />
+                                            <div className=''>
+                                                <img width="19" height="19" src="https://img.icons8.com/material-sharp/24/menu-2.png" alt="menu-2" size={25} onClick={()=>setFooterDropDown(index)} />
                                                 {
-                                                    notes.pinned ? <BsFillPinAngleFill size={25} /> : null
-                                                }
+                                                    notes.pinned ? <img width="14" height="14" src="https://img.icons8.com/forma-thin-filled/14/pin.png" alt="pin" />: null                                                }
                                             </div>
                                             {
                                                 footerDropDown === index ? <div className='footerDropDown' onMouseLeave={()=>setFooterDropDown()}>
-                                                <div className="delete" onClick={()=>{handleDelete(index);setFooterDropDown()}}>
-                                                    <AiOutlineDelete size={25} />
+                                                <div className="" onClick={()=>{handleDelete(index);setFooterDropDown()}}>
+                                                <img width="19" height="19" src="https://img.icons8.com/material-rounded/19/delete-forever.png" alt="delete-forever"/>
                                                 </div>
-                                                <div className='pinIcon' onClick={()=>handlePin(notes.note, index)}>
-                                                    <BsFillPinAngleFill size={25} />
+                                                <div className='' onClick={()=>handlePin(notes.note, index)}>
+                                                <img width="14" height="14" src="https://img.icons8.com/forma-thin-filled/14/pin.png" alt="pin"/>
                                                 </div>
                                             </div> : null
                                             }
                                             <span>{notes.currDate}</span>
-                                            <div className="starIcon" onClick={() => handleFavorite(index)}
-                                                style={{
-                                                    backgroundColor: `${notes.favorite ? 'black' : 'transparent'}`,
-                                                    color: `${!notes.favorite ? 'black' : 'orange'}`
-                                                }}>
+                                            <div className="" onClick={() => handleFavorite(index)} >
                                                 {
-                                                    notes.favorite ? <AiFillStar size={25} /> : <AiOutlineStar size={25} />
+                                                    
+                                              notes.favorite ?  <img width="37" height="37" src="https://img.icons8.com/plasticine/37/star--v1.png" alt="star--v1"/>: <img width="37" height="37" src="https://img.icons8.com/carbon-copy/37/star.png" alt="star"/>
+
                                                 }
 
                                             </div>
